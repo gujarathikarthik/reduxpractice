@@ -11,12 +11,12 @@ export default function Page() {
   console.log("data", data);
 
   const dispatch = useDispatch();
-  const handleDelete = (id: number) => {
-    // dispatch(remove(id));
-    console.log("remove", dispatch(remove(id)));
+  // const handleDelete = (id: number) => {
+  //   // dispatch(remove(id));
+  //   console.log("remove", dispatch(remove(id)));
 
-    console.log("id", id);
-  };
+  //   console.log("id", id);
+  // };
   return (
     <div>
       <Link href={"/"}>back</Link>
@@ -32,7 +32,7 @@ export default function Page() {
               <h1>{title}</h1>
               <h1>{brand}</h1>
               <h1>{count}</h1>
-              <button onClick={() => handleDelete(id)}>delete</button>
+              <button>delete</button>
             </div>
           );
         })}
